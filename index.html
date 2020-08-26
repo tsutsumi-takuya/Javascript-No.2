@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -7,6 +7,22 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
-	Hello.
+	<span>Hello world!!</span> <!-- インライン要素(横並び配置) ※ 横幅と縦幅指定出来ない -->
+	<span>Hello world!!</span>
+	<span>Hello world!!</span>
+	<!-- <div>Hello world!!</div>  ブロック要素(上下配置) ※ 横幅と縦幅指定可能 -->
+	<style>
+		body {
+			text-align: center;
+		}
+		span {
+			/*display: block; インライン要素のにブロック要素の措置を付加*/
+			display: inline-block; /*高さ反映で横並び要素*/
+			margin: 0 auto;
+			width: 100px;
+			height: 200px;
+			background-color: red;
+		}
+	</style>
 </body>
 </html>
