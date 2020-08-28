@@ -1,20 +1,17 @@
 #container {
-	text-align: center;
-}
+  text-align: center; }
 
 .btn {
-	background-color: white;
-	color: black;
-	border: 1px solid black; /* dashed,dotted */
-	padding: 10px 40px; /* 上下、左右(ボーダー内の余白)*/
-	margin: 50px 0; /* 上下、左右(ボーダー街の余白) */
-	font-weight: 600; /* 線の太さ */
-	cursor: pointer;
-	transition: all 0.3s ease 0.3s; /* 色が変化する秒数の指定 ※第四引数には遅延時間も設定出来る */
-}
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 40px;
+  margin: 50px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s; }
+  .btn:hover {
+    background-color: black;
+    color: white; }
 
-.btn:hover { /* hoverした際に発火 */
-	background-color: black;
-	color: white;
-
-}
+/*# sourceMappingURL=style(buttom).css.map */
