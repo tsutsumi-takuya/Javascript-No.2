@@ -10,4 +10,11 @@
 	margin: 50px 0; /* 上下、左右(ボーダー街の余白) */
 	font-weight: 600; /* 線の太さ */
 	cursor: pointer;
+	transition: all 0.3s ease 0.3s; /* 色が変化する秒数の指定 ※第四引数には遅延時間も設定出来る */
+}
+
+.btn:hover { /* hoverした際に発火 */
+	background-color: black;
+	color: white;
+
 }
