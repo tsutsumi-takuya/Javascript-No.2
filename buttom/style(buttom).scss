@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+$cWhite: white; // 変数としての指定を行う
+$cBlack: black;
+
+#container {
+	text-align: center;
+}
+
+.btn {
+	background-color: $cWhite;
+	color: $cBlack;
+	border: 1px solid $cBlack; // dashed,dotted
+	padding: 10px 40px; // 上下、左右(ボーダー内の余白)
+	margin: 50px 0; // 上下、左右(ボーダー街の余白)
+	font-weight: 600; // 線の太さ
+	cursor: pointer;
+	transition: all 0.3s; // 色が変化する秒数の指定 ※第四引数には遅延時間も設定出来る
+
+	&.float {
+		&:hover {
+    		box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	&.simple {
+		&:hover {
+    		background-color: $cBlack;
+    		color: $cWhite;
+		}
+	}
+}
+
