@@ -1,0 +1,19 @@
+#container {
+  text-align: center; }
+
+.try .btn {
+  posison: relative;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: 600;
+  padding: 10px 40px;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: all 0.3s; }
+  .try .btn.float:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); }
+
+/*# sourceMappingURL=try.css.map */

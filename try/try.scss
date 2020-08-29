@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+$cWhite: white; // 変数としての指定を行う
+$cBlack: black;
+
+#container {
+	text-align: center;
+}
+
+.try {
+	& .btn {
+		posison: relative;
+		display: inline-block;
+		background-color: $cWhite;
+		border: 1px solid $cBlack;
+		font-weight: 600;
+		padding: 10px 40px;
+		margin: 10px auto;
+		cursor: pointer;
+		transition: all 0.3s;
+
+		&.float:hover {
+			background-color: $cBlack;
+			color: $cWhite;
+			box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+		}
+	}
+}
