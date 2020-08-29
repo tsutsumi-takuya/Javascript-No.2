@@ -16,8 +16,14 @@ $cBlack: black;
 	cursor: pointer;
 	transition: all 0.3s; // 色が変化する秒数の指定 ※第四引数には遅延時間も設定出来る
 
-	&:hover {
-		background-color: $cBlack;
-		color: $cWhite;
+	// &:hover {
+	// 	background-color: $cBlack;
+	// 	color: $cWhite;
+	// }
+
+	&.float {
+		&:hover {
+    		box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+		}
 	}
 }
