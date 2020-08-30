@@ -60,3 +60,15 @@ $cBlack: black;
 		}
 	}
 }
+
+.rect {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: orangered;
+	transform-origin: center center; // 物体に任意の点を付与(x,y指定可能)
+	transform: scale(1.5); // scale => 倍の大きさに変形(x,y指定可能)
+	// transform: skew(30deg); // skew => 平行に変形(x,y指定可能)
+	// transform: rotate(30deg); // rotate => 物体を回転させる(x,y指定可能)
+	// transform: translate(50px 50px); // translate => 物体を移動させる(x,y指定可能) ※ ％指定も可能
+}

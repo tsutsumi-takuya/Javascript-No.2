@@ -38,4 +38,12 @@
       box-shadow: none;
       border-radius: 10px; }
 
+.rect {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: orangered;
+  transform-origin: center center;
+  transform: scale(1.5); }
+
 /*# sourceMappingURL=try.css.map */
