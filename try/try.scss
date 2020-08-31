@@ -243,3 +243,39 @@ $cBlack: black;
 	// transform: rotate(30deg); // rotate => 物体を回転させる(x,y指定可能)
 	// transform: translate(50px 50px); // translate => 物体を移動させる(x,y指定可能) ※ ％指定も可能
 }
+
+.parent {
+	background-color: skyblue;
+	height: 600px;
+	width: 100%;
+	text-align: left;
+	display: flex; // 要素を重ねたくない場合
+	justify-content: center; // space-around(均等に間隔が空く) space-between(要素ごとに均等に間隔が空く)
+	align-items: center;
+	flex-direction: column; // 並ぶ方向の指定
+	// position: relative; 要素を重ねる場合に使用
+	// letter-spacing: -16px; 文字間隔の定義
+}
+
+.child {
+	// position: absolute; 要素を重ねる場合に使用
+	// top: 50%;
+	// left: 50%;
+	// transform: translate(-50%, -50%);
+	background-color: orange;
+	width: 100px;
+	height: 100px;
+	font-weight: 600;
+	// margin: 0 auto;
+	// display: inline-block; inline-blockするとmargin等の指定が行えない
+}
+
+.child.v2{
+	width: 200px;
+	height: 200px;
+	background-color: palevioletred;
+}
+
+.child.v3{
+	background-color: rebeccapurple;
+}

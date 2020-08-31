@@ -171,4 +171,28 @@
   transform-origin: center center;
   transform: scale(1); }
 
+.parent {
+  background-color: skyblue;
+  height: 600px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.child {
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  font-weight: 600; }
+
+.child.v2 {
+  width: 200px;
+  height: 200px;
+  background-color: palevioletred; }
+
+.child.v3 {
+  background-color: rebeccapurple; }
+
 /*# sourceMappingURL=try.css.map */
