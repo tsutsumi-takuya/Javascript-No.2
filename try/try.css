@@ -41,7 +41,8 @@
     position: relative;
     overflow: hidden;
     z-index: 1; }
-    .try .btn.slide-bg span {
+    .try .btn.slide-bg::before {
+      content: '';
       display: inline-block;
       width: 100%;
       height: 100%;
@@ -54,7 +55,7 @@
       z-index: -1; }
     .try .btn.slide-bg:hover {
       color: white; }
-      .try .btn.slide-bg:hover span {
+      .try .btn.slide-bg:hover::before {
         transform: none; }
 
 .rect {
