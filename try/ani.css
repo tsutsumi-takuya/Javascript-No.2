@@ -21,5 +21,24 @@
     transform: scale(0); }
   100% {
     transform: scale(0); } }
+body {
+  text-align: center; }
+
+.rect {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation: sk-2-bouncedelay 1.4s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+@keyframes sk-2-bouncedelay {
+  from {
+    transform: scale(0);
+    background-color: white; }
+  to {
+    transform: scale(1); } }
 
 /*# sourceMappingURL=ani.css.map */

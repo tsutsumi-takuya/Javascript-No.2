@@ -40,3 +40,34 @@ $cBlack: black;
 		transform: scale(0);
 	}
 }
+
+body {
+	text-align: center;
+}
+
+.rect {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: $cBlack;
+	animation: sk-2-bouncedelay 1.4s;
+	animation-timing-function: ease;
+	// animation-delay: 3s; // 遅延時間
+	animation-iteration-count: 1; // 繰り返し数の指定
+	// animation-iteration-count: infinite; // 無限に繰り返し表示
+	// animation-direction: reverse; // 100%から0%での表示
+	// animation-direction: alternate; // 折り返しでの表示(0=>100)
+	// animation-direction: alternate-reverse; // 折り返しでの表示(100=>0)
+	animation-fill-mode: forwards; // 終了時時点のCSSを保管
+}
+
+@keyframes sk-2-bouncedelay {
+	from {
+		transform: scale(0);
+		background-color: white;
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
