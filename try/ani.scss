@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+$cBlack: black;
+
+.three-dot-sppiner {
+	text-align: center;
+
+	& div {
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		background-color: $cBlack;
+		border-radius: 50%;
+		animation: sk-bouncedelay 1.4s infinite; // キーフレイル,秒数,無限
+	}
+
+	& .bounce1 {
+		animation-delay: -0.32s;
+	}
+
+	& .bounce2 {
+		animation-delay: -0.16s;
+	}
+}
+
+@keyframes sk-bouncedelay {
+	0% {
+		transform: scale(0);
+	}
+
+	40% {
+		transform: scale(1);
+	}
+
+	80% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(0);
+	}
+}
