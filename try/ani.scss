@@ -99,3 +99,34 @@ div {
 		}
 	}
 }
+
+@import "mixin";
+
+.try {
+	.sppiner {
+		width: 40px;
+		height: 40px;
+		background-color: gray;
+		margin: 100px auto;
+
+		@include animation(
+			$name: sk-rotateplane-2,
+			$duration: 1.2s,
+			$iteration-count: infinite,
+			$timing-function: ease-in-out
+			);
+	}
+
+	@keyframes sk-rotateplane-2 {
+		0% {
+			transform: perspective(120px) rotateX(0) rotateY(0); // perspective => 奥行きの設定
+		}
+		50% {
+			transform: rotateX(-180deg) rotateY(0); // X軸を軸として回転(180度),Y軸の設定も行う
+		}
+		100% {
+			transform: rotateX(-180deg) rotateY(-180deg);
+		}
+	}
+}
+
