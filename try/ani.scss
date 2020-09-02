@@ -71,3 +71,33 @@ body {
 		transform: scale(1);
 	}
 }
+
+a {
+	color: orange;
+
+	&:visited {
+		color: blue;
+	}
+
+	&:hover {
+		color: red;
+	}
+
+	&:focus {
+		color: green;
+	}
+
+	&:active {
+		color: purple;
+	}
+}
+
+div {
+	& span {
+		color: olive;
+
+		&:nth-child(odd) { // odd => 偶数 even => 奇数
+		color: purple;
+		}
+	}
+}
