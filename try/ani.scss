@@ -13,12 +13,10 @@ $cBlack: black;
 		border-radius: 50%;
 		animation: sk-bouncedelay 1.4s infinite; // キーフレイル,秒数,無限
 
-		&:nth-child(1) {
-			animation-delay: -0.32s;
-		}
-
-		&:nth-child(2) {
-			animation-delay: -0.16s;
+		@for $i from 1 through 2 { // $iは変数(1=>2)に変化して行く
+			&:nth-child(#{$i}) { // インターポレーション型にする
+				animation-delay: -0.32s / $i;
+			}
 		}
 	}
 }
