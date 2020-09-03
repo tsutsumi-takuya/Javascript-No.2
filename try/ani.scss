@@ -169,7 +169,42 @@ div {
 	}
 
 	.rect-spinner {
+		width: 50px;
+		height: 40px;
+		text-align: center;
+		letter-spacing: -2px;
+		margin: 100px auto;
 
+		& > div {
+			width: 6px;
+			height: 100%;
+			display: inline-block;
+			background-color: $cBlack;
+
+			@include animation(
+				$name: sk-stretchdelay,
+				$duration: 1.2s,
+				$iteration-count: infinite,
+				$timing-function: ease-in-out
+			);
+
+			@for $i from 1 through 5 {
+				&:nth-child(#{$i}) {
+				animation-delay: -1.3s + $i * 0.1s;
+				}
+			}
+		}
+	}
+
+	@keyframes sk-stretchdelay {
+		0%,
+		40%,
+		100% {
+			transform: scaleY(0.4);
+		}
+		20% {
+			transform: scaleY(1);
+		}
 	}
 }
 
