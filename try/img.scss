@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import 'mixin';
+
+img {
+  max-width: 100%;
+}
+
+.cover-slide {
+
+  position: relative;
+
+  &::after {
+    content: '';
+    position: abusolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+  }
+}
+
+@keyframes kf-cover-slide {
+  0% {
+    left: 0;
+    right: 100%;
+  }
+}
