@@ -114,7 +114,15 @@ img {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 600px;
+  height: 200px;
 
   @extend .img-zoom; // img-zoomのCSSを読み込む
+}
+
+.img-bg50 {
+  &::before {
+    display: block;
+    content: '';
+    padding-top: 50%;
+  }
 }
