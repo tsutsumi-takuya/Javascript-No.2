@@ -16,6 +16,7 @@ img {
     background-color: #eaebe6;
     opacity: 0; }
   .cover-slide.inview::after {
+    opacity: 1;
     animation-name: kf-cover-slide;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;

@@ -25,6 +25,7 @@ img {
 
   &.inview {
     &::after {
+      opacity: 1;
        @include animation(
         $name: kf-cover-slide,
         $duration: 1.5s,
