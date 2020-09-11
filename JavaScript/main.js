@@ -36,7 +36,16 @@ console.log(good.slice(0, 5));		// 文字列の切り取り
 console.log(good.substring(0, 2));	// 与えられた数字分の文字列の切り取り
 console.log(good.split(' '));		// 配列分割
 
-const arry = new Array(1,2,3,4,5,6);
-arry[5] = 8;
+const arry = [1, 2, 3, 4, 5, 6, 'mozi', false];
+
+arry[5] = 8;				// 配列を指定して上書き
+arry.push('new item');		// 末尾に挿入
+arry.unshift('new item');	// 先頭に挿入
+const val = arry.pop();		// 末尾を削除
+console.log(val);			// popで消した値の表示
+const val2 = arry.shift();	// 先頭の値の削除
+console.log(val2);			// 削除した値の表示
+
 console.log(arry);
 console.log(arry[0]);
+console.log(arry.length);
