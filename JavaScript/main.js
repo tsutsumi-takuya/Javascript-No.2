@@ -67,3 +67,9 @@ person.age = 12;				// ageの更新
 console.log(person.name);
 console.log(person.gender);		// 格納されているものの表示
 person.getFullName();
+
+const arryloop = [1,2,3,4,5];
+
+for (let i = 0; i < 5; i = i + 1) {
+	console.log(i);
+}
