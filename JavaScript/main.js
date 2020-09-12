@@ -70,6 +70,6 @@ person.getFullName();
 
 const arryloop = [1,2,3,4,5];
 
-for (let i = 0; i < 5; i = i + 1) {
-	console.log(i);
+for (let i = 0; i < arryloop.length; i++ ) {
+	console.log(arry[i]);
 }
