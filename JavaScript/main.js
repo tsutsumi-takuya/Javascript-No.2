@@ -49,3 +49,21 @@ console.log(val2);			// 削除した値の表示
 console.log(arry);
 console.log(arry[0]);
 console.log(arry.length);
+
+const person = {
+	name: ['Code', 'Mafia'],
+	age: 32,
+	gender: 'male',
+	interests: {
+		sports: 'Baseball',
+		music: 'Chill'
+	},
+	getFullName: function() {
+		console.log(this.name[0] + this.name[1])
+	}
+};
+
+person.age = 12;				// ageの更新
+console.log(person.name);
+console.log(person.gender);		// 格納されているものの表示
+person.getFullName();
