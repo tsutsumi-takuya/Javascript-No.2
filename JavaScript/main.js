@@ -68,8 +68,16 @@ console.log(person.name);
 console.log(person.gender);		// 格納されているものの表示
 person.getFullName();
 
-const arryloop = [1,2,3,4,5];
+const arryloop = [1,2,3,4,5,6];
 
 for (let i = 0; i < arryloop.length; i++ ) {
 	console.log(arry[i]);
+}
+
+for (let i in arryloop) {			// inは添字
+	console.log(i, arryloop[i]);
+}
+
+for (let i of arryloop) {			// ofは値
+	console.log(i);
 }
