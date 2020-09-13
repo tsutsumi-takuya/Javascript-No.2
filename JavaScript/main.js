@@ -78,6 +78,28 @@ for (let i in arryloop) {			// inは添字
 	console.log(i, arryloop[i]);
 }
 
-for (let i of arryloop) {			// ofは値
-	console.log(i);
+for (let v of arryloop) {			// vは値
+	console.log(v);
+}
+
+const todos = [
+	{
+		id: 1,
+		title: 'Go to School',
+		completed: true
+	},
+	{
+		id: 2,
+		title: 'Go to Musium',
+		completed: true
+	},
+	{
+		id: 3,
+		title: 'Go to Shopping',
+		completed: true
+	}
+]
+
+for (let i = 0; i < todos.length; i++) {
+	console.log(i, todos[i]);
 }
