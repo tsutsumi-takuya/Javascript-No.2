@@ -96,10 +96,20 @@ const todos = [
 	{
 		id: 3,
 		title: 'Go to Shopping',
-		completed: true
+		completed: false
 	}
 ]
 
 for (let i = 0; i < todos.length; i++) {
-	console.log(i, todos[i]);
+	let todo = todos[i];
+	if (todo.completed === true){
+		console.log(i, todo.title);
+	}
+}
+
+for (let i in todos){
+	let todo = todos[i];
+	if (todo.completed === true){
+		console.log(i, todo.completed);
+	}
 }
