@@ -134,10 +134,35 @@ if(1 == '2') {
 	console.log('this is false');
 }
 
-const num = Number(false);
-console.log(num);
+const num = undefined;
+const bool = Boolean(num);
+console.log(bool);
 
 if(0 == false) {
+	console.log('this is true');
+} else {
+	console.log('this is false');
+}
+
+if(0 != '0') {
+	console.log('this is true');
+} else {
+	console.log('this is false');
+}
+
+if(0 == '0' && 0 === '0') {
+	console.log('this is true');
+} else {
+	console.log('this is false');
+}
+
+if(0 == '0' || 0 === '0') {
+	console.log('this is true');
+} else {
+	console.log('this is false');
+}
+
+if(num) {
 	console.log('this is true');
 } else {
 	console.log('this is false');
