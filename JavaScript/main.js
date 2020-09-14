@@ -121,3 +121,24 @@ if(false) {
 } else {
 	console.log('this is false');
 }
+
+if(1 === '1') {
+	console.log('this is true');
+} else {
+	console.log('this is false');
+}
+
+if(1 == '2') {
+	console.log('this is true');
+} else {
+	console.log('this is false');
+}
+
+const num = Number(false);
+console.log(num);
+
+if(0 == false) {
+	console.log('this is true');
+} else {
+	console.log('this is false');
+}
