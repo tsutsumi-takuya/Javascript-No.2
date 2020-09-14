@@ -113,3 +113,11 @@ for (let i in todos){
 		console.log(i, todo.completed);
 	}
 }
+
+if(false) {
+	console.log('this is true');
+} else if (true){
+	console.log('this is else if block');
+} else {
+	console.log('this is false');
+}
