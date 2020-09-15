@@ -167,3 +167,12 @@ if(num) {
 } else {
 	console.log('this is false');
 }
+
+const hi = (name, age) => {
+	console.log('hello ' + name + age); // アロー関数
+	console.log('hello ' + name + age);
+}
+
+hi('hello code mafia');
+hi('hello code mafia 2');
+hi();
