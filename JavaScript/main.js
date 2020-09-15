@@ -168,11 +168,16 @@ if(num) {
 	console.log('this is false');
 }
 
-const hi = (name, age) => {
-	console.log('hello ' + name + age); // アロー関数
-	console.log('hello ' + name + age);
-}
+const hi = (name, age) => 40;
+// {
+// 	console.log('hello ' + name + age); // アロー関数
+// 	console.log('hello ' + name + age);
+// }
 
-hi('hello code mafia');
-hi('hello code mafia 2');
-hi();
+// hi('hello code mafia');
+// hi('hello code mafia 2');
+// hi();
+
+const arry_3 = [1,2,3,4,5,6];
+
+arry_3.forEach(value => console.log(value));
