@@ -182,6 +182,8 @@ const arry_3 = [1,2,3,4,5,6];
 
 arry_3.forEach(value => console.log(value));
 
+
+
 function Hi(callback, lastname) {
 	console.log(callback);
 	console.log('hello ' + callback(lastname));
@@ -208,3 +210,20 @@ Hi(function(name) {
 	return 'Code ' + name;
 }, 'Mafia');
 
+Hi(getFirstName, 'Mafia');
+
+function doSomething(a, b, call) {
+	const result = call(a,b);
+	console.log(result);
+}
+
+function multiply(a, b) {
+	return a * b;
+}
+
+function plus(a, b) {
+	return a+b;
+}
+
+doSomething(2, 2, multiply);
+doSomething(3, 3, plus);
