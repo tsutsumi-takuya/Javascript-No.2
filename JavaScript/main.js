@@ -182,12 +182,29 @@ const arry_3 = [1,2,3,4,5,6];
 
 arry_3.forEach(value => console.log(value));
 
-function Hi(callback) {
-	console.log('hello ' + callback());
+function Hi(callback, lastname) {
+	console.log(callback);
+	console.log('hello ' + callback(lastname));
 }
 
 function getName() {
 	return 'Code mafia';
 }
 
+function getFirstName(){
+	return 'Code';
+}
+
+Hi(function() {
+	return 'Code';
+});
+
 Hi(getName);
+Hi(getFirstName);
+
+Hi(() => 'Code'); // アロー関数
+
+Hi(function(name) {
+	return 'Code ' + name;
+}, 'Mafia');
+
