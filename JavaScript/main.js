@@ -227,3 +227,28 @@ function plus(a, b) {
 
 doSomething(2, 2, multiply);
 doSomething(3, 3, plus);
+
+const arry_4 = [1,2,3,4,5];
+
+function forEach(ary, callback_2) {
+	for (let i = 0; i < ary.length; i++) {
+		callback_2(ary[i]);
+	}
+}
+
+function log(val) {
+	console.log(val);
+}
+
+function double(val) {
+	val = val * 2;
+	log(val);
+}
+
+forEach(arry_4, log);
+forEach(arry_4, double);
+forEach(arry_4, function(val) {
+	val = val * 3;
+	log(val);
+});
+
