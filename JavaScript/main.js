@@ -181,3 +181,13 @@ const hi = (name, age) => 40;
 const arry_3 = [1,2,3,4,5,6];
 
 arry_3.forEach(value => console.log(value));
+
+function Hi(callback) {
+	console.log('hello ' + callback());
+}
+
+function getName() {
+	return 'Code mafia';
+}
+
+Hi(getName);
