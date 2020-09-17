@@ -269,3 +269,24 @@ for (let i = 0; i < arry_5.length; i++) {
 // 	console.log(val);
 // })
 
+const arry_6 = [1,2,3,4,5];
+
+arry_6.reduce(function(accu, curr) {
+	console.log(accu, curr);
+	// return accu * curr;
+	// 前の値の戻り値がaccuに入る
+	// currには配列の値が入る
+}, 10);
+
+const str = 'animation';
+const strArry = str.split('');
+
+console.log(strArry);
+
+const result = strArry.reduce((accu, curr) => {
+	console.log(accu);
+	return `${accu}<${curr}>`; // テンプレートリテラル
+	// return accu + '<' + curr + '>';
+}, "");
+
+console.log(result);
