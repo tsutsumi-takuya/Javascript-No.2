@@ -252,3 +252,20 @@ forEach(arry_4, function(val) {
 	log(val);
 });
 
+const arry_5 = [11,22,33,44,55];
+
+arry_5.forEach(val => console.log(val));
+
+arry_5.forEach(function(val, i, ary) {
+	console.log(val, i, ary);
+});
+
+for (let i = 0; i < arry_5.length; i++) {
+	const v = arry_5[i];
+	console.log(v);
+}
+
+// arry_5.forEach(function(val) {
+// 	console.log(val);
+// })
+
