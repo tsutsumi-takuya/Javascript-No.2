@@ -306,6 +306,7 @@ function reduce(arry_7, callback_3, defaultVlue) {
 		let curr_2 = arry_7[i];
 		accu_2 = callback_3(accu_2, curr_2);
 	}
+	return accu_2;
 }
 
 const result_2 = reduce(strArry_2, tag, "");
