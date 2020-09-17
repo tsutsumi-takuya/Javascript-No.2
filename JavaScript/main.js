@@ -290,3 +290,23 @@ const result = strArry.reduce((accu, curr) => {
 }, "");
 
 console.log(result);
+
+const str_2 = 'animation';
+const strArry_2 = str.split('');
+
+function tag(accu_2, curr_2) {
+	console.log(accu_2, curr_2);
+	return `${accu_2}<${curr_2}>`;
+}
+
+function reduce(arry_7, callback_3, defaultVlue) {
+	let accu_2 = defaultVlue;
+
+	for (let i = 0; i < arry_7.length; i++) {
+		let curr_2 = arry_7[i];
+		accu_2 = callback_3(accu_2, curr_2);
+	}
+}
+
+const result_2 = reduce(strArry_2, tag, "");
+console.log(result_2);
